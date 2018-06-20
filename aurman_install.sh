@@ -16,7 +16,7 @@ echo "installing expac-git..."
 curl -o PKGBUILD https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=expac-git
 makepkg PKGBUILD --skippgpcheck --install --noconfirm --needed
 
-echo "installing expac-git..."
+echo "installing aurman..."
 
 # install aurman
 curl -o PKGBUILD https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=aurman
