@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# make temp dir
-mkdir -p /tmp/aurman_install
-cd /tmp/aurman_install
+# make tmp dir
+mkdir -p aurman_install
+cd aurman_install
 
 echo "installing dependencies..."
 
@@ -23,8 +23,8 @@ curl -o PKGBUILD https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=aurman
 makepkg PKGBUILD --skippgpcheck --install --noconfirm --needed
 
 # clean up
-cd ~
-rm -r -f /tmp/aurman_install
+cd ..
+rm -rf aurman_install
 echo "enjoy aurman!"
 echo "-------------"
 
