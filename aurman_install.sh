@@ -8,7 +8,7 @@ echo "installing dependencies..."
 
 # install dependencies
 sudo pacman -Sy binutils make gcc fakeroot pkg-config --noconfirm --needed
-sudo pacman -S git python python-regex python-requests ---noconfirm --needed
+sudo pacman -S git python python-regex python-requests --noconfirm --needed
 
 echo "installing expac-git..."
 
