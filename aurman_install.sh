@@ -34,8 +34,9 @@ read -p "install pamac? [y/n]" answer
 if [[ $answer = y ]] ; then
   aurman -S pamac-aur --noconfirm
   echo "pamac is ready..."
+  echo "-------------"
 fi
 
-echo "end..."
+echo "end of script..."
 exit 0
 
